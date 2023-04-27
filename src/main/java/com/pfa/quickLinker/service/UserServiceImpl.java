@@ -1,7 +1,11 @@
 package com.pfa.quickLinker.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+<<<<<<< HEAD
 
+=======
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+>>>>>>> 826bd14b7b4cff0eeca6378020a16da86f0e5a07
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -21,16 +25,26 @@ public class UserServiceImpl  implements UserService{
 	@Autowired
 	RoleRepository roleRepository;
 	
+<<<<<<< HEAD
 	/*
 	  @Autowired
 	 
 	BCryptPasswordEncoder bCryptPasswordEncoder;
 	*/
+=======
+	@Autowired
+	BCryptPasswordEncoder bCryptPasswordEncoder;
+	
+>>>>>>> 826bd14b7b4cff0eeca6378020a16da86f0e5a07
 	
 	@Override
 	public User saveUser(User user) {
 		// TODO Auto-generated method stub
+<<<<<<< HEAD
 		//user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
+=======
+		user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
+>>>>>>> 826bd14b7b4cff0eeca6378020a16da86f0e5a07
 		return userRepository.save(user);
 	}
 

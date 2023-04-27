@@ -38,7 +38,11 @@ public class AdresseController {
 	Adresse update(Adresse adresse);
 	void addAdresseToProfile(Long idProfile,Adresse adresse);
 	 */
+<<<<<<< HEAD
 	
+=======
+	//maping 
+>>>>>>> 826bd14b7b4cff0eeca6378020a16da86f0e5a07
 	@PostMapping("/add")
 	public Adresse addAdresse(@RequestBody Adresse adresse) {
 		
