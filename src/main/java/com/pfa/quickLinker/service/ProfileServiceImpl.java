@@ -51,7 +51,7 @@ public class ProfileServiceImpl implements ProfileService{
 		// TODO Auto-generated method stub
 		return profileRepository.findByNomProfileContains(c);
 	}
-
+// profile tel
 	@Override
 	public List<Profile> findByTel(String tel) {
 		// TODO Auto-generated method stub
