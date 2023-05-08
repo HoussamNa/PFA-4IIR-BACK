@@ -4,7 +4,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+<<<<<<< HEAD
+
+=======
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+>>>>>>> 826bd14b7b4cff0eeca6378020a16da86f0e5a07
 
 import com.pfa.quickLinker.model.Role;
 import com.pfa.quickLinker.model.User;
@@ -46,9 +50,17 @@ public class QuickLinker2Application {
 	}
 */
 	
+<<<<<<< HEAD
+	/*@Bean
+	BCryptPasswordEncoder getBCE() {
+		return new BCryptPasswordEncoder();
+	}
+*/	
+=======
 	@Bean
 	BCryptPasswordEncoder getBCE() {
 		return new BCryptPasswordEncoder();
 	}
 	
+>>>>>>> 826bd14b7b4cff0eeca6378020a16da86f0e5a07
 }
