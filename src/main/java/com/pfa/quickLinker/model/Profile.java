@@ -4,8 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+<<<<<<< HEAD
 import com.pfa.quickLinker.controller.ProfileController;
 import com.pfa.quickLinker.service.ProfileService;
+=======
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
@@ -17,14 +20,20 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
+<<<<<<< HEAD
 import lombok.Builder;
+=======
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @Entity
 @Data @AllArgsConstructor @NoArgsConstructor @ToString
+<<<<<<< HEAD
 @Builder
+=======
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 public class Profile {
 	
 	
@@ -42,11 +51,14 @@ public class Profile {
 	
 	
 	@ManyToOne
+<<<<<<< HEAD
 	@JsonIgnore
 	private User user;
 	
 	
 	@ManyToOne
+=======
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 	@JoinColumn(name = "idTel")
 	@JsonIgnore
 	private Tel tel;

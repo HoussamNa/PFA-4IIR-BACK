@@ -12,7 +12,10 @@ public interface AdresseService {
 	List<Adresse>findAll();
 	Adresse update(Adresse adresse);
 	void addAdresseToProfile(Long idProfile,Adresse adresse);
+<<<<<<< HEAD
 	void addAdresseToProfile(Long idP,Long idA);
 	Adresse findByProfile(Long idP);
+=======
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 
 }

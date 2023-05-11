@@ -67,6 +67,7 @@ public class AdresseServiceImpl implements AdresseService {
 		
 	}
 
+<<<<<<< HEAD
 	@Override
 	public void addAdresseToProfile(Long idP, Long idA) {
 		Profile p=profileRepository.findById(idP).get();
@@ -82,4 +83,6 @@ public class AdresseServiceImpl implements AdresseService {
 		return p.getAdresse();
 	}
 
+=======
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 }

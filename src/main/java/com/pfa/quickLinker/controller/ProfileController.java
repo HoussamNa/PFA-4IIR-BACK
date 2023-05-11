@@ -14,7 +14,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.pfa.quickLinker.model.Profile;
 import com.pfa.quickLinker.repository.ProfileRepository;
+<<<<<<< HEAD
 import com.pfa.quickLinker.service.ProfileService;
+=======
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 
 
 @RestController
@@ -23,7 +26,11 @@ import com.pfa.quickLinker.service.ProfileService;
 public class ProfileController {
 	
 	@Autowired
+<<<<<<< HEAD
 	ProfileService profileService;
+=======
+	ProfileRepository profileRepository;
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 	
 	/*
 	  		Profile add(Profile profile);
@@ -39,33 +46,53 @@ public class ProfileController {
 	
 	@PostMapping("/add")
 	public Profile add(@RequestBody Profile profile) {
+<<<<<<< HEAD
 		return profileService.add(profile);
+=======
+		return profileRepository.save(profile);
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 	}
 	
 	@GetMapping("/all")
 	public List<Profile>findAll(){
+<<<<<<< HEAD
 		return profileService.findAll();
+=======
+		return profileRepository.findAll();
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 	}
 	
 	@DeleteMapping("/delete/{idProfile}")
 	public void deleteById(@PathVariable Long idProfile) {
+<<<<<<< HEAD
 		profileService.deleteById(idProfile);
+=======
+		profileRepository.deleteById(idProfile);
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 		
 	}
 	
 	@GetMapping("/{idProfile}")
 	public Profile findById(@PathVariable Long idProfile) {
+<<<<<<< HEAD
 		return profileService.findById(idProfile);
+=======
+		return profileRepository.findById(idProfile).get();
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 	}
 	
 	@GetMapping("/name/{name}")
 	public List<Profile>findByName(@PathVariable("name") String name){
+<<<<<<< HEAD
 		return profileService.findByName(name);
 	}
 	
 	@GetMapping("/ProfilesByUser/{idUser}")
 	public List<Profile>getProfilesByUser(@PathVariable long idUser){
 		return profileService.getProfilesByUser(idUser);
+=======
+		return profileRepository.findByNomProfile(name);
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 	}
 
 }

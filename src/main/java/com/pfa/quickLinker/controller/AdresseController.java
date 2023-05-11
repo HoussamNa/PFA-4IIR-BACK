@@ -15,8 +15,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.pfa.quickLinker.model.Adresse;
 import com.pfa.quickLinker.model.Image;
+<<<<<<< HEAD
 import com.pfa.quickLinker.model.Profile;
 import com.pfa.quickLinker.repository.ProfileRepository;
+=======
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 import com.pfa.quickLinker.service.AdresseService;
 import com.pfa.quickLinker.service.ImageService;
 
@@ -31,9 +34,12 @@ public class AdresseController {
 	@Autowired
 	ImageService imageService;
 	
+<<<<<<< HEAD
 	@Autowired
 	ProfileRepository profileRepository;
 	
+=======
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 	/*
 	 	
 	Adresse add(Adresse adresse);
@@ -43,7 +49,15 @@ public class AdresseController {
 	Adresse update(Adresse adresse);
 	void addAdresseToProfile(Long idProfile,Adresse adresse);
 	 */
+<<<<<<< HEAD
 	
+=======
+<<<<<<< HEAD
+	
+=======
+	//maping 
+>>>>>>> 826bd14b7b4cff0eeca6378020a16da86f0e5a07
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 	@PostMapping("/add")
 	public Adresse addAdresse(@RequestBody Adresse adresse) {
 		
@@ -76,6 +90,7 @@ public class AdresseController {
 		adresseService.addAdresseToProfile(idProfile, adresse);
 	}
 	
+<<<<<<< HEAD
 	
 	@PostMapping("/addAdresseToProfile/{idP}/{idA}")
 	public void addAdresseToProfile(@PathVariable Long idA,@PathVariable Long idP) {
@@ -90,4 +105,6 @@ public class AdresseController {
 		return adresseService.findByProfile(idP);
 	}
 	
+=======
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 }

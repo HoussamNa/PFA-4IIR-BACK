@@ -1,6 +1,9 @@
 package com.pfa.quickLinker.model;
 
+<<<<<<< HEAD
 import java.math.BigDecimal;
+=======
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,8 +31,12 @@ public class Adresse {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idAdresse;
+<<<<<<< HEAD
 	private BigDecimal latitude;
 	private BigDecimal logitude;
+=======
+	private String localisation;
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 	private String desciption;
  
 	@JsonIgnore

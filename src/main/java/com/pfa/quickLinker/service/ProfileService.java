@@ -14,11 +14,16 @@ public interface ProfileService {
 			List<Profile>findAll();	
 			List<Profile> findByName(String name);
 			List<Profile>findByNameContains(String c);
+<<<<<<< HEAD
 			//jpql	
 			List<Profile>findByTel(String tel);
 			List<Profile>getProfilesByUser(long idUser);
 			
 			
+=======
+			//jpql
+			List<Profile>findByTel(String tel);
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 			
 			
 			

@@ -13,7 +13,10 @@ public interface TelService {
 	List<Tel>findAll();
 	void addTelToProfile(Long id,Tel tel);
 	void addTelToProfile(Long idP,Long idT);
+<<<<<<< HEAD
 	Tel findByProfile(Long idP);
+=======
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 
 
 }

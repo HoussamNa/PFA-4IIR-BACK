@@ -4,8 +4,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+<<<<<<< HEAD
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+=======
+<<<<<<< HEAD
+
+=======
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+>>>>>>> 826bd14b7b4cff0eeca6378020a16da86f0e5a07
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 
 import com.pfa.quickLinker.model.Role;
 import com.pfa.quickLinker.model.User;
@@ -14,7 +22,10 @@ import com.pfa.quickLinker.service.UserService;
 import jakarta.annotation.PostConstruct;
 
 @SpringBootApplication
+<<<<<<< HEAD
 @EnableWebSecurity
+=======
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 public class QuickLinker2Application {
 
 	@Autowired
@@ -48,9 +59,23 @@ public class QuickLinker2Application {
 	}
 */
 	
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+	/*@Bean
+	BCryptPasswordEncoder getBCE() {
+		return new BCryptPasswordEncoder();
+	}
+*/	
+=======
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 	@Bean
 	BCryptPasswordEncoder getBCE() {
 		return new BCryptPasswordEncoder();
 	}
 	
+<<<<<<< HEAD
+=======
+>>>>>>> 826bd14b7b4cff0eeca6378020a16da86f0e5a07
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 }

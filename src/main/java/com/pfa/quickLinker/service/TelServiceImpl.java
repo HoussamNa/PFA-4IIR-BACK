@@ -83,6 +83,7 @@ public class TelServiceImpl implements TelService {
 		profileRepository.save(p);
 		
 	}
+<<<<<<< HEAD
 
 	@Override
 	public Tel findByProfile(Long idP) {
@@ -90,6 +91,8 @@ public class TelServiceImpl implements TelService {
 		Profile p= profileRepository.findById(idP).get();
 		return p.getTel();
 	}
+=======
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 	
 
 }

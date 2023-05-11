@@ -21,7 +21,10 @@ import com.pfa.quickLinker.service.ImageService;
 @RestController
 @RequestMapping("/image")
 @CrossOrigin(origins = "*")
+<<<<<<< HEAD
 
+=======
+>>>>>>> cfd5ca8a4a2873bcc45b507f3c7c6515318376c0
 public class ImageController {
 	
 	
